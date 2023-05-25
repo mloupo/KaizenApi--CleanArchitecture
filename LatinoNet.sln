@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Enterprise Bussiness Rules", "Enterprise Bussiness Rules", "{2DC94D0A-DC35-4E56-8A38-14683C0523E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LatinoNet.Entities", "LatinoNet.Entities\LatinoNet.Entities.csproj", "{A924374A-BED0-4639-9C8A-D86F9220ECF5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interface Adapters", "Interface Adapters", "{51797291-33EA-4994-923A-EF22FA0C044F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{94921EEC-EC81-4626-9335-E1DE7D05E446}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LatinoNet.RepositoryEFCore", "LatinoNet.RepositoryEFCore\LatinoNet.RepositoryEFCore.csproj", "{E63A8967-4CC1-4D69-8DC1-A33A58AB421A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A924374A-BED0-4639-9C8A-D86F9220ECF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A924374A-BED0-4639-9C8A-D86F9220ECF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A924374A-BED0-4639-9C8A-D86F9220ECF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A924374A-BED0-4639-9C8A-D86F9220ECF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E63A8967-4CC1-4D69-8DC1-A33A58AB421A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E63A8967-4CC1-4D69-8DC1-A33A58AB421A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E63A8967-4CC1-4D69-8DC1-A33A58AB421A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E63A8967-4CC1-4D69-8DC1-A33A58AB421A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A924374A-BED0-4639-9C8A-D86F9220ECF5} = {2DC94D0A-DC35-4E56-8A38-14683C0523E1}
+		{94921EEC-EC81-4626-9335-E1DE7D05E446} = {51797291-33EA-4994-923A-EF22FA0C044F}
+		{E63A8967-4CC1-4D69-8DC1-A33A58AB421A} = {94921EEC-EC81-4626-9335-E1DE7D05E446}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {04BC0F1A-AC44-4763-9BFF-26771CC4B002}
+	EndGlobalSection
+EndGlobal
