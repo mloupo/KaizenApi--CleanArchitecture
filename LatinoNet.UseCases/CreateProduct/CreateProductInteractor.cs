@@ -1,4 +1,5 @@
-﻿using LatinoNet.DTOs;
+﻿
+using LatinoNet.DTOs;
 using LatinoNet.Entities.Interfaces;
 using LatinoNet.Entities.POCOs;
 using LatinoNet.UseCasesPorts;
@@ -14,10 +15,10 @@ namespace LatinoNet.UseCases.CreateProduct
     {
         readonly IProductRepository Repository;
         readonly IUnitOfWork UnitOfWork;
-        readonly ICreateProductInputPort OutputPort;
+        readonly ICreateProductOutputPort OutputPort;
 
         public CreateProductInteractor(IProductRepository repository
-            , IUnitOfWork unitOfWork, ICreateProductInputPort outputPort) =>
+            , IUnitOfWork unitOfWork, ICreateProductOutputPort outputPort) =>
             (Repository, UnitOfWork, OutputPort)=
             (repository, unitOfWork, outputPort);
         
@@ -29,6 +30,8 @@ namespace LatinoNet.UseCases.CreateProduct
             };
             Repository.CreateProduct(NewProduct);
             await UnitOfWork.SaveChanges();
+
+            await OutputPort.Handle(new ProductDTO { Id = NewProduct.Id, Name = NewProduct.Name });
         }
     }
 }
