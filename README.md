@@ -1,2 +1,2 @@
-# LatinoNet--CleanArchitecture
+# Kaizen--CleanArchitecture
 ![DEMO](../master/CleanArchitecture.jpg)
