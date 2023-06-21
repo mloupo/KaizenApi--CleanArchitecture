@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KaizenNet.Presenters\KaizenNet.Presenters.csproj" />
+    <ProjectReference Include="..\KaizenNet.RepositoryEFCore\KaizenNet.RepositoryEFCore.csproj" />
+    <ProjectReference Include="..\KaizenNet.UseCases\KaizenNet.UseCases.csproj" />
+  </ItemGroup>
+
+</Project>
